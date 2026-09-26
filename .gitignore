@@ -1,0 +1,17 @@
+# 이 저장소에는 정적 안내 페이지만 둡니다. 비밀값·소스코드는 절대 커밋하지 않습니다.
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.jks
+*.keystore
+*.xcconfig
+*.kt
+*.swift
+*.java
+*.dart
+*.gradle
+*.kts
+.DS_Store
+node_modules/
