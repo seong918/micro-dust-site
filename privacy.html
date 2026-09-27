@@ -1,8 +1,8 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>개인정보 처리방침</title><link rel="stylesheet" href="style.css"></head><body><main>
 <nav><a href="./">안내</a><a href="privacy.html">개인정보 처리방침</a><a href="support.html">고객센터</a></nav>
 <h1>개인정보 처리방침</h1>
-<p class="meta">오늘미세(Android · macOS) · 시행일 2026-09-27</p>
-<p>오늘미세는 회원가입, 로그인, 광고, 분석 도구, 자체 서버를 사용하지 않습니다. 앱이 다루는 정보와 그 처리 방식은 아래와 같습니다.</p>
+<p class="meta">오늘미세(Android · macOS) · 시행일 2026-09-28</p>
+<p>오늘미세는 회원가입, 로그인, 광고, 분석 도구를 사용하지 않습니다. Android 앱은 대기질 자료를 제공하기 위해 Google Firebase Cloud Firestore를 이용하고, macOS 앱은 에어코리아 OpenAPI를 이용합니다. 앱이 다루는 정보와 그 처리 방식은 아래와 같습니다.</p>
 
 <h2>1. 위치 정보</h2>
 <ul>
@@ -14,8 +14,9 @@
 
 <h2>2. 앱이 외부와 주고받는 정보</h2>
 <ul>
-<li>앱은 한국환경공단 에어코리아 OpenAPI(공공데이터포털)에 <strong>측정소 이름</strong>으로 대기질 자료를 요청합니다. 이 요청에는 기기 위치, 기기 식별자, 사용자 정보가 포함되지 않습니다.</li>
-<li>그 외 어떤 서버에도 정보를 보내지 않습니다.</li>
+<li><strong>Android:</strong> 앱은 선택된 측정소 이름에 해당하는 대기질 자료와 측정소 목록을 Google Firebase Cloud Firestore에서 읽습니다. 이 요청에 위치 좌표, 계정 정보, 광고 식별자를 넣지 않습니다. Firebase SDK는 서비스 제공에 필요한 앱·기기 정보(OS 버전, 기기 모델, Firebase SDK 버전 등)를 자동으로 처리할 수 있습니다. 네트워크 접속 과정에서 IP 주소가 처리될 수 있습니다. 개발자 서버가 에어코리아 OpenAPI에서 관측자료를 가져와 Firestore에 저장하며, 앱은 에어코리아에 직접 요청하지 않습니다.</li>
+<li><strong>macOS:</strong> 앱은 한국환경공단 에어코리아 OpenAPI(공공데이터포털)에 측정소 이름으로 대기질 자료를 요청합니다. 위치 좌표는 요청에 포함되지 않습니다.</li>
+<li>앱은 분석·광고·추적 서비스를 사용하지 않습니다.</li>
 </ul>
 
 <h2>3. 고객센터(건의하기)로 받는 정보</h2>
@@ -32,10 +33,10 @@
 </ul>
 
 <h2>5. 제3자 제공 · 위탁</h2>
-<p>개인정보를 제3자에게 제공하거나 처리를 위탁하지 않습니다.</p>
+<p>Android 앱의 대기질 자료 제공에는 Google Firebase Cloud Firestore를 이용합니다. Firebase는 서비스 제공 과정에서 위에 적힌 접속·기술 정보를 처리할 수 있습니다. 개발자는 광고나 사용자 추적 목적으로 개인정보를 제3자에게 제공하지 않습니다.</p>
 
 <h2>6. 아동의 개인정보</h2>
-<p>이 앱은 별도의 개인정보를 수집하지 않으며, 만 14세 미만 아동을 대상으로 한 정보 수집을 하지 않습니다.</p>
+<p>이 앱은 아동을 대상으로 개인정보를 요청하지 않으며, 만 14세 미만 아동을 대상으로 한 정보 수집을 하지 않습니다.</p>
 
 <h2>7. 문의</h2>
 <p>개인정보 처리에 관한 문의: <a href="mailto:furster.official@gmail.com">furster.official@gmail.com</a></p>
